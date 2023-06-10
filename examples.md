@@ -1,9 +1,14 @@
-# ITEA MDO Tutorials
+# ITEA MDO - Intro to Cloud - Part 2
 
-- Introduction to Cloud
-- Introduction to ML
+This is the demonstrationa part of the tutorial. To display Markdown in terminal install `mdless` as follows:
+```
+sudo yum install gem
+gem install mdless
+```
 
-## Stuff
+## Example of AWS CLI
+
+## Example of AWS SDK
 
 ## Example of Synthetic Data Generator
 
@@ -19,3 +24,5 @@ aws lambda list-functions | grep FunctionName
 ```
 python3 invoke_endpoint.py --api-id jfexyyj8w5 --path test.json --plot histogram 
 ```
+
+## Example of "raw" API access

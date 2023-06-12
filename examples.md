@@ -5,6 +5,9 @@ This is the demonstrationa part of the tutorial. To display Markdown in terminal
 sudo yum install gem
 gem install mdless
 ```
+Notes on `mdless` can be found here:
+
+- https://github.com/ttscoff/mdless
 
 ## Example of AWS CLI
 
@@ -20,7 +23,15 @@ and to only show the name of functions:
 ```
 aws lambda list-functions | grep FunctionName
 ```
-
+List the available REST APIs:
+```
+aws apigateway get-rest-apis
+```
+and just as in the case of listing lambda functions, in order to get just the id, use the `grep` function:
+```
+aws apigateway get-rest-apis | grep id
+```
+Invoke the synthetic data generator:
 ```
 python3 invoke_endpoint.py --api-id jfexyyj8w5 --path test.json --plot histogram 
 ```
